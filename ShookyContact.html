@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="64x64" href=" logo.png">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="MainPage.css">
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="KMart.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Shooky Shack | Main Page</title>
+</head>
+
+<body>
+    <!-- THE HEADER BAR SECTION STARTS HERE-->
+    <header>
+
+        <!-- HEADER LOGO -->
+        <div class="headerLogo">
+            <a href="#" class="logo"><img src=" logo.png" alt="logo"></a>
+            <h1 class="logoName">Shooky Shack</h1>      
+        </div>
+
+        <!-- HEADER MENU BUTTON -->
+        <input type="checkbox" id="sidebar-active" name="sidebar">
+        <label for="sidebar-active" class="open">
+            <a class="icon"><i class="fa fa-bars"></i></a>
+        </label>
+
+        <!-- NAVIGATION LINKS -->
+        <nav id="menu">
+            <label for="sidebar-active" class="close">
+                <a class="icon"><i class="fa fa-close"></i></a>
+            </label>
+
+            <!-- LINKS-->
+            <ul>
+                <li><a href="ShookyMain.html" class="link">Home</a></li>
+                <li class="dropdown link">
+                    <a href="ShookyMenu.html" class="link">Menus  <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#foods" class="link">Foods</a></li>
+                        <li><a href="#slushiesic" class="link">Drinks and Ice Cream</a></li>
+                    </ul>
+                </li>
+                <li><a href="ShookyGallery.html" class="link">Gallery</a></li>
+                <li><a href="ShookyContact.html" class="link">Contacts</a></li>
+                <li><a href="ShookyAboutUs.html" class="link">About us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- THE HEADER BAR SECTION ENDS HERE -->
+    
+
+
+    <!-- THE HOME SECTION START HERE -->
+    <section class="homePage" id="home">
+        <div class="homeContent">
+            <h2>Contacts</h2>
+        </div>
+    </section>
+    <!-- THE HOME SECTION END HERE  -->
+
+    <section>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Feel free to use the form or drop us an email. Old-fashioned phone calls work too</p>
+        
+            <div class="contact-links">
+                <p><i class="fas fa-phone"></i>
+                    <a href="tel:+639151773153"> +639151773153</a>
+                </p>
+                <p><i class="fas fa-envelope"></i>
+                    <a href="mailto:shookyshackkoolers@gmail.com"> shookyshackkoolers@gmail.com</a>
+                </p>
+                <p><i class="fa fa-location-dot"></i>
+                    <a href="https://maps.app.goo.gl/YQbBshfXwA2RGAkM8">
+                    PSAU Agri-Business Building, Don Luis Drive, San Agustin, Magalang, Pampanga
+                    </a>
+                </p>
+            </div>
+            <br><br>
+            <h2>Send Messege</h2>
+            <br>
+            <form action="" method="post">
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname">
+
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+
+                <label for="number">Phone Number: </label>
+                <input type="number" id="number" name="number">
+
+                <label for="comments">Comments: </label>
+                <textarea name="comments" id="comments" rows="5"></textarea>
+
+                <p>
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                </p>
+                <button type="submit">Send Messege</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- THE FOOTER SECTION START HERE -->
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="fbox">
+                <h3>Link Shortcuts</h3>
+                <a href="ShookyMain.html"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="ShookyMenu.html"> <i class="fas fa-arrow-right"></i>Menus</a>
+                <a href="ShookyGallery.html"> <i class="fas fa-arrow-right"></i>Gallery</a>
+                <a href="ShookyContact.html"> <i class="fas fa-arrow-right"></i>Contacts</a>
+                <a href="ShookyAboutUs.html"> <i class="fas fa-arrow-right"></i>About us</a>
+            </div>
+
+            <div class="fbox">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i>
+                    <a href="tel:+639151773153"> +639151773153</a>
+                </p>
+                <p><i class="fas fa-envelope"></i>
+                    <a href="mailto:shookyshackkoolers@gmail.com"> shookyshackkoolers@gmail.com</a>
+                </p>
+                <p><i class="fa fa-location-dot"></i>
+                    <a href="https://maps.app.goo.gl/YQbBshfXwA2RGAkM8">
+                    PSAU Agri-Business Building, Don Luis Drive, San Agustin, Magalang, Pampanga
+                    </a>
+                </p>
+            </div>
+
+            <div class="fbox">
+                <h3>Social Media</h3>
+                <div class="share">
+                    <a href="https://www.facebook.com/ShookyShack" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="credit">
+            Copyright © 2025 Shooky Shack. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- THE FOOTER SECTION END HERE -->
+</body>
+</html>

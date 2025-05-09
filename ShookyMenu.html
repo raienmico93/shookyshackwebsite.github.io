@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="logo.png">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="MainPage.css">
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="KMart.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Shooky Shack | Main Page</title>
+</head>
+
+<body>
+    <!-- THE HEADER BAR SECTION STARTS HERE-->
+    <header>
+
+        <!-- HEADER LOGO -->
+        <div class="headerLogo">
+            <a href="#" class="logo"><img src=" logo.png" alt="logo"></a>
+            <h1 class="logoName">Shooky Shack</h1>      
+        </div>
+
+        <!-- SEARCH BUTTON -->
+        <input type="checkbox" id="search-active">
+        <label for="search-active" class="open">
+            <a class="icon"><i class="fa fa-search"></i></a>
+        </label>
+
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+            <div class="search-bar">
+                <label for="search-active" class="close">
+                    <a class="icon"><i class="fa fa-arrow-left"></i></a>
+                </label>
+                <input type="search" placeholder="Search.." id="searchInput" name="search" onkeyup="listItems()">
+            </div>
+
+            <ul id="linkList">
+                <li><a href="#Macchiato"><img src=" slushie.png">Caramel Macchiato</a></li>
+                <li><a href="#MangoDrink"><img src=" slushie.png">Mango</a></li>
+                <li><a href="#tapa"><img src=" bowl.png">Tapa with Rice</a></li>
+                <li><a href="#ham"><img src=" bowl.png">Ham with Rice</a></li>
+                <li><a href="#spicedhotdog"><img src=" bowl.png">Spiced Hotdog with Rice</a></li>
+                <li><a href="#longganisa"><img src=" bowl.png">Longganisa with Rice</a></li>
+                <li><a href="#bacon"><img src=" bowl.png">Bacon with Rice</a></li>
+                <li><a href="#hungarian"><img src=" bowl.png">Hungarian Sausage with Rice</a></li>
+                <li><a href="#daing"><img src=" bowl.png">Daing with Rice</a></li>
+                <li><a href="#patty"><img src=" bowl.png">Meaty Patty Burger with Rice</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER MENU BUTTON -->
+        <input type="checkbox" id="sidebar-active" name="sidebar">
+        <label for="sidebar-active" class="open">
+            <a class="icon"><i class="fa fa-bars"></i></a>
+        </label>
+
+        <!-- NAVIGATION LINKS -->
+        <nav id="menu">
+            <label for="sidebar-active" class="close">
+                <a class="icon"><i class="fa fa-close"></i></a>
+            </label>
+
+            <!-- LINKS-->
+            <ul>
+                <li><a href="ShookyMain.html" class="link">Home</a></li>
+                <li class="dropdown link">
+                    <a href="ShookyMenu.html" class="link">Menus  <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#foods" class="link">Foods</a></li>
+                        <li><a href="#slushiesic" class="link">Drinks and Ice Cream</a></li>
+                    </ul>
+                </li>
+                <li><a href="ShookyGallery.html" class="link">Gallery</a></li>
+                <li><a href="ShookyContact.html" class="link">Contacts</a></li>
+                <li><a href="ShookyAboutUs.html" class="link">About us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- THE HEADER BAR SECTION ENDS HERE -->
+    
+
+
+    <!-- THE HOME SECTION START HERE -->
+    <section class="homePage" id="home">
+        <div class="homeContent">
+            <h2>Menus</h2>
+        </div>
+    </section>
+    <!-- THE HOME SECTION END HERE  -->
+
+
+
+    <!-- product section start here  -->
+    <section class="product" id="menus">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+            <h3 id="foods">Foods</h3>
+        </div>
+
+        <div class="row responsive">
+                <div class="swiper-slide box" id="tapa">
+                    <div class="img">
+                        <img src=" tapa.jpeg" alt="tapa">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tapa with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>55<br>
+                            XL Price: <span>&#8369;</span>85</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box" id="ham">
+                    <div class="img">
+                        <img src=" ham.jpeg" alt="ham">
+                    </div>
+                    <div class="product-content">
+                        <h3>Ham with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>45<br>
+                            XL Price: <span>&#8369;</span>75</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="spicedhotdog">
+                    <div class="img">
+                        <img src=" spicedhotdog.jpeg" alt="spicedhotdog">
+                    </div>
+                    <div class="product-content">
+                        <h3>Spiced Hotdog with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>45<br>
+                            XL Price: <span>&#8369;</span>75</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="longganisa">
+                    <div class="img">
+                        <img src=" longganisa.jpeg" alt="longganisa">
+                    </div>
+                    <div class="product-content">
+                        <h3>Longganisa with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>55<br>
+                            XL Price: <span>&#8369;</span>85</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="bacon">
+                    <div class="img">
+                        <img src=" bacon.jpeg" alt="bacon">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bacon with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>65<br>
+                            XL Price: <span>&#8369;</span>75</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="hungarian">
+                    <div class="img">
+                        <img src=" Hungarian.jpeg" alt="bacon">
+                    </div>
+                    <div class="product-content">
+                        <h3>Hungarian Sausage with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>70<br>
+                            XL Price: <span>&#8369;</span>105</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="daing">
+                    <div class="img">
+                        <img src=" daing.jpeg" alt="bacon">
+                    </div>
+                    <div class="product-content">
+                        <h3>Daing with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>65</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="patty">
+                    <div class="img">
+                        <img src=" patty.jpeg" alt="bacon">
+                    </div>
+                    <div class="product-content">
+                        <h3>Meaty Patty Burger with Rice</h3>
+                        <p>Regular Price: <span>&#8369;</span>35<br>
+                           XL Price: <span>&#8369;</span>65</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <!--Carousel 2-->
+        <div class="heading" id="slushiesic">
+            <h3>Drinks and Ice Cream</h3>
+        </div>
+        <div class="row responsive">
+                <div class="swiper-slide box" id="Macchiato">
+                    <div class="img">
+                        <img src=" Machiato .jpeg" alt="macchiato">
+                    </div>
+                    <div class="product-content">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Price: <span>&#8369;</span>60</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="MangoDrink">
+                    <div class="img">
+                        <img src=" MangoDrink.jpeg" alt="mango_drink">
+                    </div>
+                    <div class="product-content">
+                        <h3>Mango</h3>
+                        <p>Price: <span>&#8369;</span>50</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" id="ice_cream">
+                    <div class="img">
+                        <img src=" Ice cream 2.jpeg" alt="ice_cream">
+                    </div>
+                    <div class="product-content">
+                        <h3>Ice Cream</h3>
+                        <p>Price: <span>&#8369;</span>20</p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- product section end here  -->
+
+
+    <!-- newsletter section start here  -->
+    <section class="newsletter">
+        <form action="">
+            <h3>Subscribe for latest update</h3>
+            <input type="email" name="" placeholder="Enter your Email" id="" class="box1">
+            <input type="button" value="Subscribe" class="box2">
+        </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- THE FOOTER SECTION START HERE -->
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="fbox">
+                <h3>Link Shortcuts</h3>
+                <a href="ShookyMain.html"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="ShookyMenu.html"> <i class="fas fa-arrow-right"></i>Menus</a>
+                <a href="ShookyGallery.html"> <i class="fas fa-arrow-right"></i>Gallery</a>
+                <a href="ShookyContact.html"> <i class="fas fa-arrow-right"></i>Contacts</a>
+                <a href="ShookyAboutUs.html"> <i class="fas fa-arrow-right"></i>About us</a>
+            </div>
+
+            <div class="fbox">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i>
+                    <a href="tel:+639151773153"> +639151773153</a>
+                </p>
+                <p><i class="fas fa-envelope"></i>
+                    <a href="mailto:shookyshackkoolers@gmail.com"> shookyshackkoolers@gmail.com</a>
+                </p>
+                <p><i class="fa fa-location-dot"></i>
+                    <a href="https://maps.app.goo.gl/YQbBshfXwA2RGAkM8">
+                    PSAU Agri-Business Building, Don Luis Drive, San Agustin, Magalang, Pampanga
+                    </a>
+                </p>
+            </div>
+
+            <div class="fbox">
+                <h3>Social Media</h3>
+                <div class="share">
+                    <a href="https://www.facebook.com/ShookyShack" class="fab fa-facebook-f"></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="credit">
+            Copyright © 2025 Shooky Shack. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- THE FOOTER SECTION END HERE -->
+</body>
+</html>
